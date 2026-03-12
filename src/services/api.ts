@@ -459,3 +459,7 @@ export async function updateUser(id: number, data: AnyRecord) {
 export async function deleteUser(id: number) {
   return request<null>(`/users/${id}/`, { method: 'DELETE' });
 }
+
+export function deleteProduct(id: number) {
+  throw new Error('Function not implemented.');
+}
